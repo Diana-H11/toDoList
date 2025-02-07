@@ -35,7 +35,8 @@ namespace ToDo
                             Console.WriteLine("Your ToDo list for morning is: \n");
                             foreach (string task in morningTasks)
                             {
-                                Console.WriteLine(task);
+                                int taskIndex = morningTasks.IndexOf(task) + 1;
+                                Console.WriteLine(taskIndex + ". " + task);
                                 isWorking = false;
                             }
                         }
@@ -45,7 +46,8 @@ namespace ToDo
                             Console.WriteLine("Your ToDo list for afternoon is: \n");
                             foreach (string task in afternoonTasks)
                             {
-                                Console.WriteLine(task);
+                                int taskIndex = afternoonTasks.IndexOf(task) + 1;
+                                Console.WriteLine(taskIndex + ". " + task);
                                 isWorking = false;
                             }
                         }
@@ -55,7 +57,8 @@ namespace ToDo
                             Console.WriteLine("Your ToDo list for evening is: \n");
                             foreach (string task in eveningTasks)
                             {
-                                Console.WriteLine(task);
+                                int taskIndex = eveningTasks.IndexOf(task) + 1;
+                                Console.WriteLine(taskIndex + ". " + task);
                                 isWorking = false;
                             }
                         }
@@ -72,7 +75,8 @@ namespace ToDo
                         List<string> combinedList = morningTasks.Concat(afternoonTasks).Concat(eveningTasks).ToList();
                         foreach (string task in combinedList)
                             {
-                                Console.WriteLine(task);
+                                int taskIndex = combinedList.IndexOf(task) + 1;
+                                Console.WriteLine(taskIndex + ". " + task);
                                 isWorking = false;
                             }
                     }
