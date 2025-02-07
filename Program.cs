@@ -77,6 +77,7 @@ namespace ToDo
                             {
                                 int taskIndex = combinedList.IndexOf(task) + 1;
                                 Console.WriteLine(taskIndex + ". " + task);
+                                Console.WriteLine(taskIndex + ". " + task);
                                 isWorking = false;
                             }
                     }
